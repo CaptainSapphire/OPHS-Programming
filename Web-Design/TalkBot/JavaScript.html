@@ -1,0 +1,29 @@
+<script>
+
+  // This waits for the user to click the Submit button.
+  document.getElementById('submitButton').addEventListener('click',
+  function() {
+    //This takes whatever the user entered and saves it as 'messageInput'.
+    var messageInputValue = document.getElementById('messageInput').value;
+
+    messageInputValue = messageInputValue.toLowerCase();
+
+    if(messageInputValue.includes('joke')){
+      document.getElementById('TalkbotResponse').innerHTML = 'knock knock';
+    }
+
+    // This clears the `messageInput` text box.
+    
+    if(messageInputValue.includes('there')){
+      document.getElementById('TalkbotResponse').innerHTML = 'woo';
+    }
+
+    if(messageInputValue.includes('woo who')){
+      document.getElementById('TalkbotResponse').innerHTML = 'whoo you finished the joke!';
+    }
+
+    // This clears the `messageInput` text box.
+    // This clears the `messageInput` text box.
+    document.getElementById('messageInput').value = '';
+  });
+</script>
