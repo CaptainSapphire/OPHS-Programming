@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<!-- This styles the page based on the file "stylesheet.html" -->
+<head>
+  <?!= include('Stylesheet'); ?>
+</head>
+
+
+<html>
+  <body>
+    <h1>Try my TalkBot!</h1>
+
+    <p>Please enter your a message in the box. TalkBot will respond below</p>
+
+    <div id="chatbox">
+      <label>Type your message here: </label>
+      <input type="text" id="messageInput" placeholder="ex: Tell me a joke!" />
+      
+      <button id="submitButton">Submit</button>
+      
+      <br/>
+      
+      <span>TalkBot: </span>
+      <span id="TalkbotResponse">...</span>
+    </div>
+
+    <?!= include('JavaScript'); ?>
+  </body>
+</html>
